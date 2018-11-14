@@ -54,6 +54,16 @@ Configuring graphics drivers.
 ### Power Management
 Configuring power management.
 
+### Login session
+
+- slim
+
+Use pacman to install **slim** and have a graphical interface to input credentials.
+
+```
+# pacman -S slim
+```
+
 ### Window Manager
 
 - Awesome WM: window manager for graphical interface.
@@ -114,8 +124,9 @@ Create a *rc.conf* file in ~/.config/ranger/ or download the [rc.conf](.config/r
 Common utilities to be installed.
 
 - scrot: tool for screenshots.
+- feh: allow changes of wallpapers on the fly.
 
 ```
-# pacman -S scrot
+# pacman -S scrot feh
 ```
 
