@@ -28,7 +28,7 @@ The following tools are required to perform the configuration tasks.
 
 - NetworkManager
 
-The NetworkManager package is going to be the default network manager for wired and wireless connections. Must install *nm_applet* as well, so a system tray icon for network is available. 
+The NetworkManager package is going to be the default network manager for wired and wireless connections. Must install **nm_applet** as well, so a system tray icon for network is available. 
 
 ```
 # pacman -S networkmanager network-manager-applet
@@ -45,14 +45,14 @@ nm-applet --sm-disable &
 ### Bluetooth
 Configuring bluetooth devices.
 
-### Power Management
-Configuring power management.
-
 ### Xorg
 Configuring Xorg.
 
 ### Graphics Drivers
 Configuring graphics drivers.
+
+### Power Management
+Configuring power management.
 
 ### Window Manager
 
@@ -60,7 +60,7 @@ Configuring graphics drivers.
 - ttf-dejavu: Default font.
 - urxvt: Terminal emulator.
 
-The Awesome WM requires at least a font and a terminal emulator to replace __xterm__.
+The Awesome WM requires at least a font and a terminal emulator to replace **xterm**.
 
 ```
 # pacman -s awesome ttf-dejavu rxvt-unicode
@@ -86,7 +86,7 @@ $ ~/.xinitrc
 xrdb -merge ~/.Xresources &
 ```
 
-A template of (.xinitrc)[.xinitrc] file is available to download.
+A template of [.xinitrc](.xinitrc) file is available to download.
 
 ### Utilities
 Common utilities to be installed.
