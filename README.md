@@ -56,14 +56,13 @@ Configuring power management.
 
 ### Window Manager
 
-- Awesome WM: Window manager for graphical interface.
-- ttf-dejavu: Default font.
-- urxvt: Terminal emulator.
+- Awesome WM: window manager for graphical interface.
+- ttf-dejavu: default font.
 
 The Awesome WM requires at least a font and a terminal emulator to replace **xterm**.
 
 ```
-# pacman -s awesome ttf-dejavu rxvt-unicode
+# pacman -s awesome ttf-dejavu
 ```
 
 To start Awesome WM when X is started, add the following line at the very end of the *.xinitrc* file.
@@ -74,7 +73,18 @@ $ ~/.xinitrc
 exec awesome
 ```
 
-#### Configuring urxvt
+#### Terminal
+
+- urxvt
+
+Install the urxvt terminal with support to **pixbuf**. This will allow *ranger* file manager to create previews of image files.
+
+```
+$ git clone https://aur.archlinux.org/rxvt-unicode-pixbuf.git
+$ cd rxvt-unicode-pixbuf
+$ makepkg -s
+# pacman -U rxvt-unicode-pixbuf-*
+```
 
 The urxvt terminal emulator relies on *~/.Xresources* file to be configured. A template of [.Xresources](.Xresources) is available to download.
 
@@ -87,6 +97,18 @@ xrdb -merge ~/.Xresources &
 ```
 
 A template of [.xinitrc](.xinitrc) file is available to download.
+
+#### File Manager
+
+- ranger
+
+Ranger is a console file manager and must be installed with pacman.
+
+```
+# pacman -S ranger
+```
+
+Create a *rc.conf* file in ~/.config/ranger/ or download the [rc.conf](.config/ranger/rc.conf) template to allow ranger customization and image previewing.
 
 ### Utilities
 Common utilities to be installed.
